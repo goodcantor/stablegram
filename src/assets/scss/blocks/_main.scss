@@ -1,0 +1,128 @@
+.main {
+  margin-top: 113px;
+  padding-bottom: 32px;
+  @include breakpoint(768px) {
+    margin-top: 105px;
+    padding-bottom: 24px;
+  }
+  @include breakpoint(768px) {
+    margin-top: 89px;
+    padding-bottom: 20px;
+  }
+
+  &__inner {
+  }
+
+  &__title {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 62px;
+    line-height: 76px;
+    /* or 123% */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.04em;
+
+    color: #222632;
+
+    margin-bottom: 20px;
+    @include breakpoint(768px) {
+      font-size: 52px;
+      line-height: 68px;
+      /* or 131% */
+
+      display: flex;
+      align-items: center;
+      letter-spacing: -0.04em;
+    }
+    @include breakpoint(428px) {
+      font-size: 44px;
+      line-height: 52px;
+
+      text-align: center;
+      margin-bottom: 18px;
+    }
+    @include breakpoint(375px) {
+      font-size: 38px;
+      line-height: 46px;
+    }
+  }
+
+  &__logos {
+    @include breakpoint(428px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__logos-title {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    /* identical to box height, or 133% */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.02em;
+
+    /* black text */
+
+    color: #1e222e;
+
+    margin-bottom: 42px;
+
+    @include breakpoint(768px) {
+      margin-bottom: 34px;
+    }
+    @include breakpoint(428px) {
+      font-size: 20px;
+      line-height: 28px;
+      text-align: center;
+      margin-bottom: 25px;
+    }
+  }
+
+  &__logo {
+    overflow-x: hidden;
+  }
+
+  &__logos-logos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include breakpoint(428px) {
+      animation: marquee 60s infinite linear;
+      gap: 25px;
+    }
+  }
+
+  &__logos-logos-img {
+    @include breakpoint(768px) {
+      transform: scale(0.72);
+    }
+    @include breakpoint(428px) {
+    }
+  }
+  &__logos-logos-img2 {
+    display: none;
+    @include breakpoint(428px) {
+      display: block;
+      transform: scale(0.72);
+    }
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-42%);
+  }
+}
