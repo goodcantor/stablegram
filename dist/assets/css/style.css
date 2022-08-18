@@ -569,26 +569,26 @@ a:focus {
     background: #4c89ea;
 }
 
-.main {
+main .main {
     margin-top: 113px;
     padding-bottom: 32px;
 }
 
 @media (max-width: 768px) {
-    .main {
+    main .main {
         margin-top: 105px;
         padding-bottom: 24px;
     }
 }
 
 @media (max-width: 768px) {
-    .main {
+    main .main {
         margin-top: 89px;
         padding-bottom: 20px;
     }
 }
 
-.main__title {
+main .main__title {
     font-family: "Inter";
     font-style: normal;
     font-weight: 800;
@@ -605,7 +605,7 @@ a:focus {
 }
 
 @media (max-width: 768px) {
-    .main__title {
+    main .main__title {
         font-size: 52px;
         line-height: 68px;
     /* or 131% */
@@ -618,7 +618,7 @@ a:focus {
 }
 
 @media (max-width: 428px) {
-    .main__title {
+    main .main__title {
         font-size: 44px;
         line-height: 52px;
         text-align: center;
@@ -627,14 +627,14 @@ a:focus {
 }
 
 @media (max-width: 375px) {
-    .main__title {
+    main .main__title {
         font-size: 38px;
         line-height: 46px;
     }
 }
 
 @media (max-width: 428px) {
-    .main__logos {
+    main .main__logos {
         display: -ms-flexbox;
         display: flex;
         -ms-flex-direction: column;
@@ -644,7 +644,7 @@ a:focus {
     }
 }
 
-.main__logos-title {
+main .main__logos-title {
     font-family: "Inter";
     font-style: normal;
     font-weight: 600;
@@ -662,13 +662,13 @@ a:focus {
 }
 
 @media (max-width: 768px) {
-    .main__logos-title {
+    main .main__logos-title {
         margin-bottom: 34px;
     }
 }
 
 @media (max-width: 428px) {
-    .main__logos-title {
+    main .main__logos-title {
         font-size: 20px;
         line-height: 28px;
         text-align: center;
@@ -676,11 +676,12 @@ a:focus {
     }
 }
 
-.main__logo {
+main .main__logo {
     overflow-x: hidden;
+    width: 100%;
 }
 
-.main__logos-logos {
+main .main__logos-logos {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: justify;
@@ -690,26 +691,26 @@ a:focus {
 }
 
 @media (max-width: 428px) {
-    .main__logos-logos {
-        -webkit-animation: marquee 60s infinite linear;
-        animation: marquee 60s infinite linear;
+    main .main__logos-logos {
+        -webkit-animation: marquee 50s infinite linear;
+        animation: marquee 50s infinite linear;
         gap: 25px;
     }
 }
 
 @media (max-width: 768px) {
-    .main__logos-logos-img {
+    main .main__logos-logos-img {
         -webkit-transform: scale(0.72);
         transform: scale(0.72);
     }
 }
 
-.main__logos-logos-img2 {
+main .main__logos-logos-img2 {
     display: none;
 }
 
 @media (max-width: 428px) {
-    .main__logos-logos-img2 {
+    main .main__logos-logos-img2 {
         display: block;
         -webkit-transform: scale(0.72);
         transform: scale(0.72);
@@ -723,8 +724,8 @@ a:focus {
     }
 
     100% {
-        -webkit-transform: translateX(-42%);
-        transform: translateX(-42%);
+        -webkit-transform: translateX(-400%);
+        transform: translateX(-400%);
     }
 }
 
@@ -735,8 +736,8 @@ a:focus {
     }
 
     100% {
-        -webkit-transform: translateX(-42%);
-        transform: translateX(-42%);
+        -webkit-transform: translateX(-400%);
+        transform: translateX(-400%);
     }
 }
 
