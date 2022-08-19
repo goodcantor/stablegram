@@ -4,6 +4,10 @@
 
   margin-top: 150px;
 
+  @include breakpoint(768px) {
+    margin-bottom: 72px;
+  }
+
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -31,11 +35,15 @@
     letter-spacing: -0.04em;
 
     color: #1e222e;
-    padding-top: 6px;
+    // padding-top: 6px;
     user-select: none;
 
     @include breakpoint(768px) {
       font-size: 20px;
+      line-height: 18px;
+    }
+    @include breakpoint(428px) {
+      font-size: 14px;
       line-height: 18px;
     }
   }

@@ -1,6 +1,4 @@
 .jobs {
-  border-top: 1px solid #d7d7d7;
-
   &__inner {
   }
 
@@ -9,6 +7,10 @@
     justify-content: space-between;
     align-items: center;
     padding: 32px 0;
+
+    @include breakpoint(428px) {
+      padding: 24px 0;
+    }
   }
 
   &__top-left {
@@ -32,6 +34,8 @@
   }
 
   &__top-right {
+    width: 260px;
+    text-align: center;
     font-family: "Inter";
     font-style: normal;
     font-weight: 500;
@@ -121,7 +125,7 @@
   &__post-info {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
 
     @include breakpoint(428px) {
       flex-wrap: wrap;
@@ -283,7 +287,7 @@
     transition: all 0.3s ease;
 
     &:hover {
-      box-shadow: 0px 3px 10px rgba(111, 111, 111, 0.22);
+      box-shadow: 0px 3px 10px rgba(111, 111, 111, 0.12);
     }
   }
 
