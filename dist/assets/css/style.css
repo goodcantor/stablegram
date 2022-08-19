@@ -463,6 +463,12 @@ a:focus {
     color: #1e222e;
 }
 
+@media (max-width: 428px) {
+    .subscribe-mobile__left {
+        max-width: 170px;
+    }
+}
+
 .subscribe-mobile__btn {
     display: -ms-flexbox;
     display: flex;
@@ -491,7 +497,13 @@ a:focus {
 }
 
 .subscribe-mobile__btn:hover {
-    box-shadow: 0px 3px 10px rgba(111, 111, 111, 0.22);
+    box-shadow: 0px 3px 10px rgba(111, 111, 111, 0.12);
+}
+
+.hr {
+    height: 1px;
+    background: #d7d7d7;
+    width: 100%;
 }
 
 /* Blocks */
@@ -741,10 +753,6 @@ main .main__logos-logos-img2 {
     }
 }
 
-.jobs {
-    border-top: 1px solid #d7d7d7;
-}
-
 .jobs__top {
     display: -ms-flexbox;
     display: flex;
@@ -753,6 +761,12 @@ main .main__logos-logos-img2 {
     -ms-flex-align: center;
     align-items: center;
     padding: 32px 0;
+}
+
+@media (max-width: 428px) {
+    .jobs__top {
+        padding: 24px 0;
+    }
 }
 
 .jobs__top-left {
@@ -775,6 +789,8 @@ main .main__logos-logos-img2 {
 }
 
 .jobs__top-right {
+    width: 260px;
+    text-align: center;
     font-family: "Inter";
     font-style: normal;
     font-weight: 500;
@@ -874,8 +890,8 @@ main .main__logos-logos-img2 {
     display: flex;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    -ms-flex-align: center;
-    align-items: center;
+    -ms-flex-align: end;
+    align-items: flex-end;
 }
 
 @media (max-width: 428px) {
@@ -1035,7 +1051,7 @@ main .main__logos-logos-img2 {
 }
 
 .jobs__subscribe-btn:hover {
-    box-shadow: 0px 3px 10px rgba(111, 111, 111, 0.22);
+    box-shadow: 0px 3px 10px rgba(111, 111, 111, 0.12);
 }
 
 .jobs__statistic {
@@ -1091,6 +1107,12 @@ main .main__logos-logos-img2 {
     margin-top: 150px;
 }
 
+@media (max-width: 768px) {
+    .footer {
+        margin-bottom: 72px;
+    }
+}
+
 .footer__inner {
     display: -ms-flexbox;
     display: flex;
@@ -1123,7 +1145,6 @@ main .main__logos-logos-img2 {
     line-height: 27px;
     letter-spacing: -0.04em;
     color: #1e222e;
-    padding-top: 6px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -1133,6 +1154,13 @@ main .main__logos-logos-img2 {
 @media (max-width: 768px) {
     .footer__logo-name {
         font-size: 20px;
+        line-height: 18px;
+    }
+}
+
+@media (max-width: 428px) {
+    .footer__logo-name {
+        font-size: 14px;
         line-height: 18px;
     }
 }
